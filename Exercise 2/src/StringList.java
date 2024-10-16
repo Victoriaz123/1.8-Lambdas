@@ -5,7 +5,7 @@ public class StringList {
 
     public static List<String> filterStrings(List<String> strings) {
         return strings.stream()
-                .filter(s -> s.contains("o") && s.length() >5)
+                .filter(s -> s.contains("o") && s.length() >4)
                 .collect(Collectors.toList());
     }
 }
