@@ -2,9 +2,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
 
-        ReverseString reverser = input -> Stream.of(input.split(""))
-                .reduce((first, second) -> second + first)
-                .orElse("");
+        ReverseString reverser = input -> new StringBuilder(input).reverse().toString();
 
         String str = "Head First Java";
         String reversed = reverser.reverse(str);
